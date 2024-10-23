@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PseudoElemts</title>
+    <style>
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .bloq-m::first-letter {
+        font-size: 2rem;
+        font-weight: bold;
+        color: crimson;
+      }
+      .is-required::before {
+        content: "*";
+        color: crimson;
+        padding-right: 2px;
+      }
+      ul {
+        list-style: none;
+      }
+      li::before{
+        content: "\1f43e";
+        padding-right: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Peseudo Elementos</h1>
+    <p class="bloq">
+      Los Pseudo Elemntos sirven para poner estilo a partes del contenido de los
+      elemntos html
+    </p>
+    <p class="bloq-m">La primera letra tiene otro estilo</p>
+    <form>
+      <label class="is-required" for="nombre">Nombre </label>
+      <input type="text" id="nombre" />
+    </form>
+    <ul>
+        <li>Primero 1</li>
+        <li>Primero 2</li>
+        <li>Primero 3</li>
+    </ul>
+  </body>
+</html>

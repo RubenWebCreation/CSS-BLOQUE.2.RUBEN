@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        body{
+            background-color: #666666;
+        }
+        .container{
+            display: flex;
+        }
+        .box{
+            background-color: rgb(177, 181, 184);
+            padding: 1rem;
+            margin: 2rem;
+            /* offset-x | offset-y | color */
+            box-shadow: 10px 10px rgb(46, 46, 47);
+              /* offset-x | offset-y | blur-radius| color */
+              box-shadow: 10px 10px 10px rgb(46, 46, 47);
+
+              /* valores negativos */
+              box-shadow: -5px -5px 10px cornflowerblue;
+
+               /* offset-x | offset-y | blur-radius |spread-radius | color */
+               box-shadow: -5px -5px 10px 6px cornflowerblue;
+
+               /* inset | offset-x | offset-y | color   */
+               box-shadow: inset -5px -5px 10px rgb(255, 255, 255);
+
+               /* Multiples sombras */
+               box-shadow: 10px 10px red, -10px -10px;
+
+               
+        }
+    </style>
+</head>
+<body><div class="container">
+    <div class="box">
+        <h3>Titulo</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nostrum at ipsum dolores quis itaque ea nam officia laborum voluptas? Sed blanditiis qui pariatur itaque provident unde consequuntur ducimus officiis.</p>
+    </div>
+    <div class="box">
+        <h3>Titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita temporibus beatae, ipsam maiores voluptatem nam! A numquam quam nisi architecto, esse tempore cupiditate omnis corrupti eveniet labore sapiente molestiae.</p>
+    </div>
+    <div class="box">
+        <h3>Titulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita temporibus beatae, ipsam maiores voluptatem nam! A numquam quam nisi architecto, esse tempore cupiditate omnis corrupti eveniet labore sapiente molestiae.</p>
+    </div>
+</div>
+
+    
+</body>
+</html>
