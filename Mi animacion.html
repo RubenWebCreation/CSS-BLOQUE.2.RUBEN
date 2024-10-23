@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: #010b14;
+      }
+      .Rebote {
+        text-align: center;
+        font-size: 15rem;
+      }
+      .Rebote {
+        animation: Boing 500ms alternate ease-out;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      .cubito {
+        text-align: left;
+        animation: cubito 500ms alternate ease-out;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes Boing {
+        0% {
+          transform: scaleX(1);
+        }
+        40% {
+          transform: scaleX(1.12) scaleY(0.75);
+        }
+        55% {
+          transform: scaleX(0.85) scaleY(1);
+        }
+        65% {
+          transform: scaleX(1.09) scaleY(0.85);
+        }
+        75% {
+          transform: scaleX(0.9) scaleY(1);
+          transform: rotateX(20px "angle");
+        }
+        90% {
+          transform: scaleX(1.05) scaleY(0.95);
+        }
+        100% {
+          transform: scaleX(1) scaleY(1);
+        }
+      }
+
+      @keyframes cubito {
+        0% {
+            transform: scalex(1) scaleY(0) scaleZ(10)
+        }
+        40% {
+            transform: scalex(1) scaleY(2) scaleZ(9)
+        }
+        55% {
+          
+        }
+        65% {
+          
+        }
+        75% {
+          
+        }
+        90% {
+          
+        }
+        100% {
+          
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Rebote"><img src="img/GXCyv8RWUAAk3SR.png"></div>
+    <div class="cubito"><img src="img/The_Cube_-_Entity_-_Fortnite (1).webp" alt=""></div>
+  </body>
+</html>
