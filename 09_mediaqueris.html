@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mediaqueries</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: darkgray;
+        color: aliceblue;
+        padding-top: 100px;
+        text-align: center;
+      }
+      h1 {
+        display: none;
+      }
+      /* Portrait */
+      @media only screen and (max-width: 500px) {
+        body {
+          background-color: brown;
+        }
+        #smartphone h1 {
+          display: block;
+        }
+      }
+      @media (min-width: 501px) and (max-width: 768px) {
+        body {
+          background-color: blue;
+        }
+        #tablet h1 {
+          display: block;
+        }
+      }
+      /* Normal */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background-color: rgb(16, 206, 16);
+        }
+        #normal h1 {
+          display: block;
+        }
+      }
+      /* widescreen */
+      @media (min-width: 1201px) {
+        body {
+          background-color: rgb(0, 0, 0);
+        }
+        #widescren h1 {
+          display: block;
+        }
+        
+      }
+      /* landscape */
+      @media (max-height:500px) {
+        body {
+          background-color: rgb(255, 115, 0);
+        }
+        #landscape h1 {
+          display: block;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="widescren">
+      <h1>Panoramico</h1>
+    </div>
+    <div id="normal">
+      <h1>Normal</h1>
+    </div>
+    <div id="tablet">
+      <h1>Tablet</h1>
+    </div>
+    <div id="smartphone">
+      <h1>Movil vertical</h1>
+    </div>
+    <div id="landscape">
+      <h1>Movil Horizontal</h1>
+    </div>
+  </body>
+</html>
