@@ -9,12 +9,11 @@
         box-sizing: border-box;
       }
       .flex-container {
-        display: flex;
-        flex-direction: column;
-        /* flex-direction: row;
-        flex-wrap: wrap-reverse; */
-        background-color: rgb(249, 201, 114);
         height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(249, 201, 114);
       }
       .item {
         background-color: rgb(50, 186, 186);
@@ -23,19 +22,34 @@
         padding: 10px;
         text-align: center;
         border-radius: 5px;
-        flex: 1;
+        order: 4;
       }
-      /* .item-1 {
-        flex-grow: 1;
-        flex-basis: 0;
+      .item-1 {
+        order: 2;
+        /* flex-grow: 6;
+        flex-shrink: 0;
+        flex-basis: 200px; */
+        flex: 6 0;
       }
       .item-2 {
-        flex-grow: 2;
-        flex-basis: 0;
+        order: 3;
+        align-self: flex-end;
       }
       .item-3 {
-        flex: 2;
-      } */
+        flex-grow: 1;
+        order: 1;
+        font-size: 0.4rem;
+      }
+      .item-4 {
+        flex-grow: 1;
+      }
+      .item-5 {
+        flex-grow: 1;
+      }
+      
+      .item-6 {
+        flex-grow: 2;
+      }
     </style>
   </head>
   <body>
@@ -48,6 +62,15 @@
       </div>
       <div class="item item-3">
         <h3>Item 3</h3>
+      </div>
+      <div class="item item-4">
+        <h3>Item 4</h3>
+      </div>
+      <div class="item item-5">
+        <h3>Item 5</h3>
+      </div>
+      <div class="item item-6">
+        <h3>Item 6</h3>
       </div>
     </div>
   </body>
