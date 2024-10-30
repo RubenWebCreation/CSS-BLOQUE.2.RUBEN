@@ -54,9 +54,4 @@ ul {
    list-style: none;
    flex-grow: 50;
 }
-@media only screen and (max-width: 500px) {
-  header {
-    display: inline;
-  }
-}
 /* EJERCICIO TERMINADO */

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap");
+
+body{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.header {
+background-color: blanchedalmond;
+border-bottom: 1px solid #333;
+padding: 8px;
+display: flex;
+justify-content: space-between;
+}
+.profile-image {
+ background-color: blueviolet;
+ width: 48px;
+ height: 48px;
+ border-radius: 50%;
+ box-shadow: inset 2px 2px 4px purple;
+ /* background-image: ;ui avatars */
+ background-position: center;
+}
+.right, .left{
+  display: flex;
+  align-items: center ;
+  gap: 1.6rem;
+}
+.logo {
+  font-size: 1.4rem;
+}
+
+button {
+ 
+}
+
+a {
+ 
+}
+
+ul {
+
+}
+/* EJERCICIO SOLUCION */

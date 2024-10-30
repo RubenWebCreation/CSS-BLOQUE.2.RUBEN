@@ -1,29 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-links{
+
+}
+.left-links{
+padding: 5px;
+flex-grow: 1;
 }
 
 img {
+display: flex;
+justify-content: center;
 }
 
 button {
+    justify-content: center;
+    background-color: rgb(237, 237, 237);
+    border: 1px ;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1px;
+    width: 8rem;
 }
 
 input {
+justify-content: center;
+width: 500px;
+display: flex;
+margin: 12px;
+height: 30px;
+border: 1px solid rgb(213, 213, 213);
+border-radius: 20px;
 }
 
 .content {
+    flex:1;
+    justify-items: center;
+    padding: 5rem;
 }
 
 a {
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    margin: 10px; 
 }
 
 .header,
 .footer {
+    display: flex;
+    flex-direction: row;
 }
 
 .footer {
+    display: flex;
+    background-color: rgb(210, 210, 210);
 }
 
 ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
 }
+/* EJERCICIO COMPLETADO */
