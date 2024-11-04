@@ -29,11 +29,12 @@ button {
     text-align: center;
     margin: 1px;
     width: 8rem;
+    cursor: pointer;
 }
 
 input {
 justify-content: center;
-width: 500px;
+min-width: 500px;
 display: flex;
 margin: 12px;
 height: 30px;

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .menu-container {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+      }
+      .menu-container .toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+      }
+
+      /* CSS PARA LA CAPA DEL MANU */
+      .menu-container .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* visibility: hidden; */
+        transform: translateX(-100vw);
+        transition: all 0.4s ease;
+        background-color: rgba(41, 3, 51, 0.589);
+      }
+
+      .menu-container .toggler:checked~.menu {
+        /* visibility: visible; */
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-container">
+      <!-- boton -->
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <!-- menu -->
+      <div class="menu">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <header id="showcase">
+      <div class="container showcase-container">
+        <h1>Ejemplo de menu despegable</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa
+          cumque aperiam nihil rerum possimus, rem, inventore, laudantium
+          eligendi quam quidem? Placeat omnis repudiandae eveniet consequatur
+          asperiores, fuga neque tempora.
+        </p>
+        <a href="#" class="btn">Leer Mas</a>
+      </div>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, incidunt
+      aspernatur! Optio repellendus facere, neque cumque nostrum unde corrupti
+      impedit similique doloribus delectus quae? Eaque, quos. Dicta consequuntur
+      necessitatibus id. Vel tempora quam voluptates inventore est eum!
+      Repudiandae, maxime voluptatem! Officiis ipsa sapiente ex eius aliquid
+      recusandae sint, corrupti eligendi vel debitis provident quos possimus
+      soluta. Accusantium tenetur ut exercitationem. Velit provident magni
+      explicabo dignissimos quas obcaecati facilis accusantium qui tenetur minus
+      deleniti modi tempore dolorum rem maiores, consectetur necessitatibus
+      molestiae laborum magnam doloribus, eaque libero hic? Asperiores, labore
+      suscipit! Numquam, quidem ad facilis libero quisquam, commodi ducimus
+      natus ratione in ipsum ea laudantium doloremque non. Necessitatibus
+      consectetur est deleniti dolore facilis ex quo facere corrupti accusamus
+      recusandae, beatae voluptates. Debitis ad quis obcaecati consequatur
+      cupiditate quidem deleniti porro sit amet, nihil qui, ex dolorem odit
+      laboriosam ut eveniet inventore veritatis dolores, ipsa sed voluptates
+      illo explicabo perspiciatis. Sint, fugiat! Corrupti sint libero excepturi,
+      ipsum facere molestias maiores esse quae, ad odit inventore beatae odio
+      dicta, exercitationem non aspernatur repellat eum voluptate aperiam?
+      Quaerat cumque culpa corporis odio voluptatem reprehenderit. Voluptates
+      atque impedit dignissimos unde sequi, delectus velit nobis, a accusamus
+      laborum ipsa nam voluptatem quidem. Illo autem distinctio, eaque fugit
+      veritatis rem vero consequatur minus libero recusandae molestias hic. Quam
+      suscipit impedit adipisci debitis asperiores dolores cumque officiis
+      sapiente illo aperiam quis nesciunt, consequatur, magni aut quos error,
+      sequi sunt illum repellat dolorem dolore omnis earum? Delectus, aliquid
+      recusandae. Quidem officia temporibus ea porro quae tempora aspernatur
+      rerum magni, provident delectus mollitia, iure, exercitationem
+      reprehenderit dolor. Voluptatum ut libero repellat dolore aperiam hic qui
+      modi est, consequatur earum. Velit. Accusamus ab doloremque maiores at,
+      perferendis est facilis magnam non nihil optio, vitae placeat dolorum unde
+      laboriosam corrupti labore sed a dolores suscipit corporis cumque beatae
+      animi! Sequi, voluptatum dolore?
+    </header>
+  </body>
+</html>

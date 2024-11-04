@@ -1,0 +1,88 @@
+
+      /* Variables en css  :root y var*/
+      :root {
+        --color-primario: #64406d98;
+        --color-secundario: rgb(136, 212, 136);
+      }
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: rgb(139, 139, 139);
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 3rem;
+      }
+      #showcase {
+        background: var(--color-primario);
+        color: white;
+        height: 100vh;
+        position: relative;
+      }
+      #showcase::before {
+        content: "";
+        background: url(../img/KevinCube..png) no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      #showcase .showcase-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 1rem;
+        background-color: rgba(5, 5, 5, 0.781);
+        color: aliceblue;
+        padding: 0.75rem 1.5rem;
+        transition: opacity 1s ease-in-out;
+      }
+      #showcase h1 {
+        font-size: 4rem;
+        /* TRUCO PONER FONDO A TEXTO */
+        background: linear-gradient(
+          to left,
+          rgb(255, 153, 0),
+          rgb(229, 17, 236)
+        );
+        background-clip: text;
+        color: transparent;
+        /* FIN TRUCO */
+        text-align: center;
+      }
+
+      #showcase p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+      .btn:hover {
+        opacity: 0.7;
+      }
+      ul a{
+        background: linear-gradient(
+          to left,
+          rgb(192, 121, 15),
+          rgb(229, 17, 236)
+        );
+        background-clip: text;
+        color: transparent;
+        list-style: none;
+        font-size: 5rem;
+      }
+      ul{
+        list-style: none;
+      }
