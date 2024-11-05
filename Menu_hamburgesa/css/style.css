@@ -2,7 +2,9 @@
       /* Variables en css  :root y var*/
       :root {
         --color-primario: #64406d98;
-        --color-secundario: rgb(136, 212, 136);
+        --color-secundario: rgb(109, 3, 112);
+        --hamburger-size: 60px;
+        --menu-speed:0.75s;
       }
       * {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -71,18 +73,4 @@
       }
       .btn:hover {
         opacity: 0.7;
-      }
-      ul a{
-        background: linear-gradient(
-          to left,
-          rgb(192, 121, 15),
-          rgb(229, 17, 236)
-        );
-        background-clip: text;
-        color: transparent;
-        list-style: none;
-        font-size: 5rem;
-      }
-      ul{
-        list-style: none;
       }
